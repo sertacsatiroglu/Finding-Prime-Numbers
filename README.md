@@ -6,20 +6,20 @@ By following steps, you can view a guideline for threads basicly.
 
 
 # Queue Structure 
-Queue is an abstract data type in which the elements are inserted to the rear and are removed from the front (first in, first out). In this project, it will be implemented as a dynamically allocated array size of which is selected from the command-line. The array will be used circularly. The actual C struct which holds the queue include the following fields:
+Queue is an abstract data type in which the elements are inserted to the rear and are removed from the front (first in, first out). In this project, it will be implemented as a dynamically allocated array size of which is selected from the command-line. The array will be used circularly. The actual C struct which holds the queue include the following fields:<br />
 
- -The integer pointer holding the memory location of the array
- -The maximum size of the queue
- -The current size of the queue
- -The index of the front
+ -The integer pointer holding the memory location of the array<br />
+ -The maximum size of the queue<br />
+ -The current size of the queue<br />
+ -The index of the front<br />
 
 Any additional variables directly related to the queue operation is a field of the struct. If the queue is full, the threads wanting to insert will wait until it is possible. Similarly, if the queue is empty, the threads wanting to remove will wait.
-For the operation of the queue, four functions are implemented, namely:
+For the operation of the queue, four functions are implemented, namely:<br />
 
- -QueueInitialize: Initialize the necessary fields of the queue.
- -QueueInsert: Insert an integer to the queue.
- -QueueRemove: Remove an integer from the queue.
- -QueueDestroy: Destroy the necessary fields of the queue.
+ -QueueInitialize: Initialize the necessary fields of the queue.<br />
+ -QueueInsert: Insert an integer to the queue.<br />
+ -QueueRemove: Remove an integer from the queue.<br />
+ -QueueDestroy: Destroy the necessary fields of the queue.<br />
 
 The declarations and implementations of the struct and the related functions are in queue.handqueue.c files.
 
@@ -45,13 +45,13 @@ If the number is not a prime number, then the first 10 divisors of the number is
 Then, worker threads will start over until the generator thread finishes working.
 
 # Command-line arguments
-The program use four optional arguments to change parameters:
- -t: Number of worker threads (default 3)
- -q: The maximum size of the queue, which is shared by the threads (default 5)
- -r: The amount of the random numbers (default 10)
- -m: The lower bound of the range of the random numbers (default 1)
- -n: The upper bound of the range of the random numbers (default 100, maximum 2000)
- -g: The rate of generation time (default 100)
+The program use four optional arguments to change parameters:<br />
+ -t: Number of worker threads (default 3)<br />
+ -q: The maximum size of the queue, which is shared by the threads (default 5)<br />
+ -r: The amount of the random numbers (default 10)<br />
+ -m: The lower bound of the range of the random numbers (default 1)<br />
+ -n: The upper bound of the range of the random numbers (default 100, maximum 2000)<br />
+ -g: The rate of generation time (default 100)<br />
 
 # How to run in terminal?
 - If you have main.c, queue.c and queue.h as source files, you can compile your code with this command:
