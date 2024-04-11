@@ -55,6 +55,6 @@ The program use four optional arguments to change parameters:<br />
 
 # How to run in terminal?
 - If you have main.c, queue.c and queue.h as source files, you can compile your code with this command:
-gcc -o prime main.c queue.c –pthread
-- If you have only main.c as a source file, you can compile your code with this command: gcc -o prime main.c –pthread
-- Some libraries need to be linked explicitly. One example is math.h library where gcc needs -lm option.
+gcc -o prime main.c queue.c –pthread<br />
+- If you have only main.c as a source file, you can compile your code with this command: gcc -o prime main.c –pthread<br />
+- Some libraries need to be linked explicitly. One example is math.h library where gcc needs -lm option.<br />
